@@ -1,0 +1,121 @@
+"name": "@kajdep/mcp-fixer",
+  "version": "1.1.0",
+  "description": "A comprehensive diagnostic and repair tool for Model Context Protocol (MCP) servers in Claude Desktop",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "mcp-fixer": "bin/mcp-fixer.js",
+    "mcp-fixer-server": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --inspect src/index.js",
+    "test": "node test/test.js",
+    "test:integration": "node test/integration.js",
+    "lint": "eslint src test",
+    "lint:fix": "eslint src test --fix",
+    "build": "echo 'No build step required for this project'",
+    "docs:generate": "jsdoc -c jsdoc.conf.json",
+    "install:claude": "node bin/mcp-fixer.js install",
+    "uninstall:claude": "node bin/mcp-fixer.js uninstall",
+    "prepare": "npm run lint",
+    "prepublishOnly": "npm test && npm run lint",
+    "postinstall": "echo 'Run \"npx mcp-fixer install\" to add to Claude Desktop'"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.37.5",
+    "jsdoc": "^4.0.2"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "claude-desktop",
+    "model-context-protocol",
+    "diagnostic",
+    "debugging",
+    "configuration",
+    "troubleshooting",
+    "repair",
+    "anthropic",
+    "ai",
+    "assistant",
+    "tools",
+    "server"
+  ],
+  "author": {
+    "name": "MCP Fixer Team",
+    "email": "support@mcp-fixer.com",
+    "url": "https://github.com/your-username/mcp-fixer-server"
+  },
+  "contributors": [
+    {
+      "name": "Your Name",
+      "email": "your.email@example.com",
+      "url": "https://github.com/your-username"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/your-username/mcp-fixer-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/mcp-fixer-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/mcp-fixer-server/issues",
+    "email": "support@mcp-fixer.com"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/your-username"
+    },
+    {
+      "type": "buymeacoffee",
+      "url": "https://buymeacoffee.com/your-username"
+    }
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "os": [
+    "win32",
+    "darwin",
+    "linux"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "scripts/",
+    "docs/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "directories": {
+    "lib": "src",
+    "test": "test",
+    "doc": "docs"
+  },
+  "preferGlobal": true
+}

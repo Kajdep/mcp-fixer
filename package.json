@@ -1,0 +1,29 @@
+{
+  "name": "@kajdep/mcp-fixer",
+  "version": "1.1.0",
+  "description": "A comprehensive diagnostic and repair tool for Model Context Protocol (MCP) servers in Claude Desktop",
+  "main": "src/index.js",
+  "bin": {
+    "mcp-fixer": "bin/mcp-fixer.js",
+    "mcp-fixer-server": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --inspect src/index.js",
+    "test": "node test/test.js",
+    "test:integration": "node test/integration.js",
+    "lint": "eslint src/ test/ --ext .js",
+    "lint:fix": "eslint src/ test/ --ext .js --fix",
+    "build": "echo 'No build step required for this project'",
+    "docs:generate": "jsdoc -c jsdoc.conf.json",
+    "install:claude": "node bin/mcp-fixer.js install",
+    "uninstall:claude": "node bin/mcp-fixer.js uninstall",
+    "prepare": "npm run lint",
+    "prepublishOnly": "npm test && npm run lint",
+    "postinstall": "echo 'Run \\\"npx mcp-fixer install\\\" to add to Claude Desktop'"
+  },
+  "dependencies": {
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.33.2"
+  }
+}

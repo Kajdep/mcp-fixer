@@ -1,0 +1,21 @@
+{
+  "id": "kajdep-mcp-fixer",
+  "name": "MCP-Fixer",
+  "description": "Diagnose & repair Claude Desktop MCP servers with one command.",
+  "version": "1.1.0",
+  "projectUrl": "https://github.com/Kajdep/mcp-fixer-mcp",
+  "license": "MIT",
+  "tags": ["diagnostic", "repair", "cli", "windows", "macos", "linux"],
+
+  "entry": {
+    "command": "npx",
+    "args": ["@kajdep/mcp-fixer", "serve"],
+    "type": "stdio",               // or "http" if you expose REST
+    "workingDirectory": "."        // optional; defaults to repo root
+  },
+
+  "health": {
+    "ping": "mcp-fixer.ping",      // tool you expose for “/ping”
+    "docs": "https://github.com/Kajdep/mcp-fixer-mcp#readme"
+  }
+}
