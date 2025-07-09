@@ -23,7 +23,9 @@
     "postinstall": "echo 'Run \\\"npx mcp-fixer install\\\" to add to Claude Desktop'"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
     "eslint": "^8.57.1",
-    "eslint-plugin-react": "^7.33.2"
+    "eslint-plugin-react": "^7.33.2",
+    "fs-extra": "^11.3.0"
   }
 }
