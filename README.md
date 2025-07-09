@@ -46,6 +46,24 @@ npm install
 npm run install:claude
 ```
 
+#### Option 4: Install via Claude Desktop JSON Configuration
+1. Open your Claude Desktop configuration file (usually named `claude_desktop_config.json`).
+2. Add the MCP Fixer entry in the mcpServers section, for example:
+
+   ```json
+   {
+     "mcpServers": {
+       "mcp-fixer": {
+         "command": "npx",
+         "args": ["@kajdep/mcp-fixer"],
+         "description": "Diagnostic and repair tool for MCP servers"
+       }
+     }
+   }
+   ```
+
+3. Save the file and restart Claude Desktop if it is running.
+
 ### Usage
 
 Once installed, simply ask Claude to use the diagnostic tools:
