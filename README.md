@@ -29,19 +29,19 @@ A comprehensive diagnostic and repair tool for Model Context Protocol (MCP) serv
 
 #### Option 1: NPX (Recommended)
 ```bash
-npx @your-username/mcp-fixer-server install
+npx @kajdep/mcp-fixer install
 ```
 
 #### Option 2: Global Install
 ```bash
-npm install -g @your-username/mcp-fixer-server
+npm install -g @kajdep/mcp-fixer
 mcp-fixer install
 ```
 
 #### Option 3: Clone and Install
 ```bash
-git clone https://github.com/your-username/mcp-fixer-server.git
-cd mcp-fixer-server
+git clone https://github.com/kajdep/mcp-fixer.git
+cd mcp-fixer
 npm install
 npm run install:claude
 ```
@@ -128,8 +128,8 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ### Quick Contribution Setup
 ```bash
-git clone https://github.com/your-username/mcp-fixer-server.git
-cd mcp-fixer-server
+git clone https://github.com/kajdep/mcp-fixer.git
+cd mcp-fixer
 npm install
 npm test
 ```
@@ -153,15 +153,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - [Anthropic](https://anthropic.com) for Claude Desktop and MCP
-- [Model Context Protocol](https://modelcontextprotocol.io/) community
-- All contributors and users who provide feedback
 
 ## 📞 Support
 
 - 📖 [Documentation](docs/)
-- 🐛 [Report Issues](https://github.com/your-username/mcp-fixer-server/issues)
-- 💬 [Discussions](https://github.com/your-username/mcp-fixer-server/discussions)
-- 📧 Email: support@yourproject.com
+- 🐛 [Report Issues](https://github.com/kajdep/mcp-fixer/issues)
+- 💬 [Discussions](https://github.com/kajdep/mcp-fixer/discussions)
 
 ---
 
