@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io/)
+[![smithery badge](https://smithery.ai/badge/@Kajdep/mcp-fixer)](https://smithery.ai/server/@Kajdep/mcp-fixer)
 
 A comprehensive diagnostic and repair tool for Model Context Protocol (MCP) servers in Claude Desktop. Automatically detects, diagnoses, and fixes common MCP configuration issues.
 
@@ -26,6 +27,14 @@ A comprehensive diagnostic and repair tool for Model Context Protocol (MCP) serv
 - npm or npx available
 
 ### Installation
+
+### Installing via Smithery
+
+To install MCP Fixer Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Kajdep/mcp-fixer):
+
+```bash
+npx -y @smithery/cli install @Kajdep/mcp-fixer --client claude
+```
 
 #### Option 1: NPX (Recommended)
 ```bash
