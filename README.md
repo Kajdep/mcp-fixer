@@ -1,5 +1,7 @@
 # 🔧 MCP Fixer Server
 
+[![smithery badge](https://smithery.ai/badge/@Kajdep/mcp-fixer)](https://smithery.ai/server/@Kajdep/mcp-fixer)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io/)
