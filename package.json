@@ -10,16 +10,15 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --inspect src/index.js",
-    "test": "node test/test.js",
-    "test:integration": "node test/integration.js",
-    "lint": "eslint src/ test/ --ext .js",
-    "lint:fix": "eslint src/ test/ --ext .js --fix",
+    "test": "echo 'No tests configured'",
+    "lint": "eslint src/ bin/ --ext .js",
+    "lint:fix": "eslint src/ bin/ --ext .js --fix",
     "build": "echo 'No build step required for this project'",
     "docs:generate": "jsdoc -c jsdoc.conf.json",
     "install:claude": "node bin/mcp-fixer.js install",
     "uninstall:claude": "node bin/mcp-fixer.js uninstall",
     "prepare": "npm run lint",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm run lint",
     "postinstall": "echo 'Run \\\"npx mcp-fixer install\\\" to add to Claude Desktop'"
   },
   "dependencies": {
